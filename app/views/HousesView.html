@@ -1,0 +1,41 @@
+<section id="houseForm" class="row d-none">
+    <div class="col-4">
+        <form onsubmit="app.HouseController.createHouse()" class="form-floating">
+            <div class="mb-3">
+                <input type="number" class="form-control" placeholder="Year" required name="year" id="houseYear">
+            </div>
+            <div class="mb-3">
+                <input type="number" class="form-control" placeholder="Price" required name="price" id="housePrice">
+            </div>
+            <div class="mb-3">
+                <input type="number" class="form-control" placeholder="Bedrooms" required name="bedrooms" id="houseBedrooms">
+            </div>
+            <div class="mb-3">
+                <input type="number" class="form-control" placeholder="Bathrooms" required name="bathrooms" id="houseBathrooms">
+            </div>
+            <div class="mb-3">
+                <input type="number" class="form-control" placeholder="Levels" required name="levels" id="houseLevels">
+            </div>
+            <div class="mb-3">
+                <input type="url" required maxlength="500" placeholder="imgURL" class="form-control" name="imgUrl" id="houseImgUrl">
+            </div>
+            <div class="mb-3">
+                <textarea id="" class="form-control" rows="10" style="width: 600px;" placeholder="Description" required name="description" itemid="houseDescription"></textarea>
+            </div>
+            <div class="text-start mb-3">
+                <!-- NOTE important that we have a button with type of submit in order to trigger our onsubmit handler on the top of the form -->
+                <button type="submit" class="btn btn-success">Submit</button>
+              </div>
+        </form>
+    </div>
+</section>
+
+<section id="activeHouse"></section>
+
+    <!-- NOTE Here lies the active home card -->
+
+<section class="container-fluid">
+   <div class="row justify-content-center ps-5" id="HouseList">
+   
+   </div>
+</section>
